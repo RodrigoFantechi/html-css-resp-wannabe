@@ -122,8 +122,33 @@ img {
 .why-us li {
     list-style: none;
     margin-bottom: 2.5rem;
+    
 }
 
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+ 
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container{
+        max-width: 100%;
+    }
+    .row{
+        
+        display: block;
+    }
+    .why-us .col-left, .why-us .col-right, .lessons .col, .steps .col{
+        width:100%
+    }
+    p.text, .why-us img{
+        margin-bottom: 2rem;
+    }
+}
+
+
